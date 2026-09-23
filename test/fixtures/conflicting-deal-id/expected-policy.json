@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "case_id": "conflicting-deal-id",
+  "selected_candidate_ids": [],
+  "exact_questions": {},
+  "anti_pattern_ids": [],
+  "rejected_candidates": {},
+  "minimum_policy_coverage": 0,
+  "minimum_top_bucket_lift_pp": 0,
+  "maximum_unacknowledged_vetoed_wins": 0
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "region": "us",
+  "user": {
+    "id": "synthetic-user",
+    "admin": true,
+    "organization": {
+      "id": 4242,
+      "name": "Northstar Building Supply"
+    }
+  },
+  "qualification_questions": [
+    {
+      "question": "Is the company likely to sell through a repeatable B2B sales process?",
+      "lang": "en"
+    },
+    {
+      "question": "Is the company likely to have a dedicated commercial team?",
+      "lang": "en"
+    }
+  ],
+  "ideal_buyer_profile": {
+    "summary": "Regional B2B suppliers and contractors",
+    "key_characteristics": ["B2B", "repeat purchase potential"],
+    "anti_patterns": ["Consumer-only retailers"]
+  },
+  "targeting_prompt": "Prioritize regional business suppliers serving contractors."
+}
