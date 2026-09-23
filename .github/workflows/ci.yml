@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '22'
+
+      - name: Activate pnpm 9.15.4
+        shell: bash
+        run: |
+          set -euo pipefail
+          corepack enable
+          corepack prepare pnpm@9.15.4 --activate
+          node --version
+          pnpm --version
+
+      - name: Install committed dependency graph
+        run: pnpm install --frozen-lockfile
+
+      - name: Verify lockfile remains unchanged
+        run: git diff --exit-code -- pnpm-lock.yaml
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Type-check
+        run: pnpm typecheck
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build
+
+      - name: Verify deterministic fixture source
+        run: pnpm fixtures:check
+
+      - name: Run real mock-only Leadbay MCP demo
+        env:
+          LEADBAY_MOCK: '1'
+          LEADBAY_BASE_URL: https://leadbay.invalid
+        run: pnpm demo
+
+      - name: Verify tracked tree remains unchanged
+        run: git diff --exit-code
