@@ -1,0 +1,80 @@
+schema_version: 1
+case_id: conflicting-deal-id
+customer:
+  name: Northstar Building Supply
+  country: US
+  language: en
+business_goal:
+  summary: Find regional contractors and suppliers likely to buy through field sales.
+  positive_outcomes: [Won, Closed Won]
+  negative_outcomes: [Lost, Closed Lost]
+analysis:
+  split_strategy: grouped_temporal
+  holdout_fraction: 0.25
+  bootstrap_seed: 20260922
+  bootstrap_samples: 200
+  minimum_labeled_deals: 40
+  minimum_class_count: 12
+  minimum_holdout_class_count: 5
+columns:
+  record_id: CRM Record ID
+  company_name: Account Name
+  website: Company Website
+  contact_email: Primary Contact Email
+  location: Location
+  outcome: Deal Result
+  loss_reason: Loss Reason
+  closed_at: Close Date
+existing_lens_constraints:
+  - United States only
+  - Building-materials and contractor-adjacent sectors
+candidate_signals:
+  - id: multi_territory_field_sales
+    source_column: Sales Motion
+    kind: categorical_in
+    favorable_values: [Field sales, Territory sales]
+    publicly_observable: true
+    question: Is the company likely to operate field-sales teams across multiple territories?
+  - id: fragmented_smb_market
+    source_column: Customer Base
+    kind: categorical_in
+    favorable_values: [Fragmented SMB, Local business network]
+    publicly_observable: true
+    question: Is the company likely to sell B2B into fragmented small-business markets?
+  - id: crm_exportability
+    source_column: Commercial Systems
+    kind: contains_any
+    favorable_values: [CRM, ERP, Salesforce, HubSpot, Dynamics]
+    publicly_observable: true
+    question: Is the company likely to use a CRM or ERP that can export historical deal data?
+  - id: enterprise_scale
+    source_column: Employee Count
+    kind: numeric_gte
+    threshold: 1000
+    publicly_observable: true
+    question: Is the company likely to operate at enterprise scale with at least 1,000 employees?
+  - id: recent_funding
+    source_column: Recent Funding
+    kind: boolean_is
+    favorable_value: true
+    publicly_observable: true
+    question: Is the company likely to have raised institutional funding recently?
+  - id: warehouse_density
+    source_column: Warehouse Network
+    kind: boolean_is
+    favorable_value: true
+    publicly_observable: true
+    question: Is the company likely to operate a dense warehouse or depot network?
+explicit_vetoes:
+  - id: inactive_company
+    source_column: Legal Status
+    kind: categorical_in
+    blocking_values: [Inactive, Dissolved, Liquidation]
+    publicly_observable: true
+    anti_pattern: Inactive, dissolved, or liquidated companies
+    historical_win_tradeoff_acknowledged: false
+prohibited_columns:
+  - Deal Stage
+  - Win Probability
+  - Forecast Category
+  - Final Sales Notes

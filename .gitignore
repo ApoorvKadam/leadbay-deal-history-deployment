@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+out/
+artifacts/
+.context/
+.tmp/
+.worktrees/
+.superpowers/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+.offline/

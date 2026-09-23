@@ -1,0 +1,3 @@
+CRM Record ID,Account Name,Company Website,Primary Contact Email,Location,Deal Result,Loss Reason,Close Date,Sales Motion,Customer Base,Commercial Systems,Employee Count,Recent Funding,Warehouse Network,Legal Status,Deal Stage,Win Probability,Forecast Category,Final Sales Notes
+D-CONFLICT,Conflict Supply,conflict.example,sales@conflict.example,"Dallas, TX",Won,,2025-01-15,Field sales,Fragmented SMB,Salesforce CRM,200,false,false,Active,Closed Won,100,Commit,Synthetic win
+D-CONFLICT,Conflict Supply,conflict.example,sales@conflict.example,"Dallas, TX",Lost,No fit,2025-01-15,Field sales,Fragmented SMB,Salesforce CRM,200,false,false,Active,Closed Lost,0,Omitted,Synthetic loss
