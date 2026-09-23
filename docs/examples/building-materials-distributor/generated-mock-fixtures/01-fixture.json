@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://leadbay.invalid/1.6/users/me"
+  },
+  "response": {
+    "body": {
+      "admin": true,
+      "id": "synthetic-user",
+      "organization": {
+        "id": 4242,
+        "name": "Northstar Building Supply"
+      },
+      "telemetry_enabled": false
+    },
+    "headers": {
+      "content-type": "application/json"
+    },
+    "status": 200
+  }
+}

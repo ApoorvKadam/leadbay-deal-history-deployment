@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://leadbay.invalid/1.6/organizations/4242/ai_agent_questions"
+  },
+  "response": {
+    "body": [
+      {
+        "created_at": "2026-01-01T00:00:00.000Z",
+        "lang": "en",
+        "question": "Is the company likely to sell through a repeatable B2B sales process?"
+      },
+      {
+        "created_at": "2026-01-02T00:00:00.000Z",
+        "lang": "en",
+        "question": "Is the company likely to have a dedicated commercial team?"
+      }
+    ],
+    "headers": {
+      "content-type": "application/json"
+    },
+    "status": 200
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "current_prospects": 5,
+  "exact_duplicate_rows_collapsed": 1,
+  "historical_source_rows": 81,
+  "identity_groups": 71,
+  "normalized_deals": 80,
+  "prohibited_columns": ["Deal Stage", "Win Probability", "Forecast Category", "Final Sales Notes"],
+  "schema_version": "1.0",
+  "warning_count": 8,
+  "warnings": [
+    {
+      "source_record_id": "D-001",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    },
+    {
+      "source_record_id": "D-012",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    },
+    {
+      "source_record_id": "D-023",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    },
+    {
+      "source_record_id": "D-034",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    },
+    {
+      "source_record_id": "D-045",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    },
+    {
+      "source_record_id": "D-056",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    },
+    {
+      "source_record_id": "D-067",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    },
+    {
+      "source_record_id": "P-CONSUMER",
+      "warning": "Primary Contact Email uses a consumer mailbox domain; no company domain was derived."
+    }
+  ]
+}
