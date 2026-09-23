@@ -1,0 +1,8 @@
+Case: building-materials-distributor
+Mode: complete
+Questions proposed: 3
+Anti-patterns proposed: 1
+Policy coverage: 100.0%
+Top-bucket lift: 35.0pp
+Deployment status: projected
+No production write was performed.

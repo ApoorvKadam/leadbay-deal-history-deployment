@@ -1,0 +1,6 @@
+rank,source_record_id,company_name,local_policy_score,known_signal_count,unknown_signal_count,vetoed,veto_matches
+1,P-STRONG,Summit Territory Supply,3,3,0,false,""
+2,P-CONSUMER,Independent Remodeler Collective,2,3,0,false,""
+3,P-PARTIAL,Prairie Contractor Services,2,2,1,false,""
+4,P-WEAK,Single Site Retail Outlet,0,3,0,false,""
+5,P-INACTIVE,Dormant Regional Distributor,3,3,0,true,inactive_company

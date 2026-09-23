@@ -1,0 +1,35 @@
+{
+  "baseline_win_rate": 0.65,
+  "false_negative_ids": ["D-053", "D-058", "D-067"],
+  "false_positive_ids": [],
+  "holdout_rows": 20,
+  "per_question": {
+    "crm_exportability": {
+      "false": 10,
+      "known": 20,
+      "missing": 0,
+      "true": 10
+    },
+    "fragmented_smb_market": {
+      "false": 10,
+      "known": 20,
+      "missing": 0,
+      "true": 10
+    },
+    "multi_territory_field_sales": {
+      "false": 10,
+      "known": 20,
+      "missing": 0,
+      "true": 10
+    }
+  },
+  "policy_coverage": 1,
+  "top_bucket_lift_pp": 35,
+  "top_bucket_size": 5,
+  "top_bucket_win_rate": 1,
+  "top_half_win_capture_rate": 0.769230769231,
+  "total_wins": 13,
+  "unacknowledged_vetoed_win_ids": [],
+  "vetoed_historical_win_ids": [],
+  "wins_captured_in_top_half": 10
+}
