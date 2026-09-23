@@ -78,7 +78,7 @@ The synthetic Leadbay account begins with two qualification questions. Leadbay a
 
 There is **no live-apply path** in version 1.
 
-The CLI has no production token option, no production base URL option, and no `--apply` or `--live` flag. The preview uses the real `@leadbay/mcp@0.39.10` stdio process, but only after the following checks:
+The CLI has no production token option, no production base URL option, and no `--apply` or `--live` flag. The preview uses the real `@leadbay/mcp@0.40.0` stdio process, but only after the following checks:
 
 - the child has `LEADBAY_MOCK=1`;
 - the base URL is exactly `https://leadbay.invalid`;
@@ -145,7 +145,7 @@ The release candidate is verified against the real Leadbay package, not only a f
 
 CI installs the frozen dependency graph and checks:
 
-- `@leadbay/mcp@0.39.10`
+- `@leadbay/mcp@0.40.0`
 - `@modelcontextprotocol/sdk@1.29.0`
 - Node.js 22
 - Biome lint
@@ -155,7 +155,7 @@ CI installs the frozen dependency graph and checks:
 - the real Leadbay MCP process in mock mode
 - a clean tracked tree after the demo
 
-The current Leadbay public source still reports package version `0.39.10`, keeps the five-question ceiling, requires confirmation for removals, and returns the buyer profile plus targeting prompt with the qualification-question read.
+This release was checked against Leadbay's public `mcp-v0.40.0` source. The qualification tools still use a five-question ceiling, require confirmation when an existing question is dropped, and return the buyer profile plus targeting prompt on the read.
 
 See [`docs/verification.md`](docs/verification.md) for the exact gates and what they prove.
 

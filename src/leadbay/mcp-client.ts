@@ -23,7 +23,7 @@ export interface McpSessionFactoryOptions {
 
 export type McpSessionFactory = (options: McpSessionFactoryOptions) => Promise<McpSession>;
 
-const REQUIRED_LEADBAY_VERSION = "0.39.10";
+const REQUIRED_LEADBAY_VERSION = "0.40.0";
 const dynamicImport = new Function("specifier", "return import(specifier)") as (
   specifier: string,
 ) => Promise<unknown>;

@@ -52,7 +52,7 @@ describe("reviewer documentation", () => {
     ]) {
       expect(readme).toContain(boundary);
     }
-    expect(readme).toContain("@leadbay/mcp@0.39.10");
+    expect(readme).toContain("@leadbay/mcp@0.40.0");
     expect(readme).toContain("@modelcontextprotocol/sdk@1.29.0");
     expect(readme).toMatch(/verified against the real Leadbay package/i);
     expect(readme).toContain("35 test files and 131 passing tests");
@@ -130,7 +130,7 @@ describe("curated synthetic example", () => {
     );
     const notice = text(join(exampleRoot, "EXAMPLE-NOTICE.md"));
     expect(notice).toMatch(/synthetic/i);
-    expect(notice).toContain("@leadbay/mcp@0.39.10");
+    expect(notice).toContain("@leadbay/mcp@0.40.0");
     expect(notice).toMatch(/not live Leadbay validation/i);
 
     const attestation = MockSessionAttestationSchema.parse(

@@ -1,6 +1,6 @@
 # Verification
 
-The repository is checked in GitHub Actions on both Ubuntu and Windows against the real `@leadbay/mcp@0.39.10` package and `@modelcontextprotocol/sdk@1.29.0`.
+The repository is checked in GitHub Actions on both Ubuntu and Windows against the real `@leadbay/mcp@0.40.0` package and `@modelcontextprotocol/sdk@1.29.0`.
 
 ## What CI checks
 

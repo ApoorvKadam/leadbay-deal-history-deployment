@@ -209,7 +209,7 @@ function verifyTools(tools: McpToolDefinition[]): void {
       code: "LEADBAY_TOOL_CONTRACT_MISMATCH",
       exitCode: 4,
       message: "The pinned Leadbay MCP does not expose the expected qualification tool contracts.",
-      hint: "Verify @leadbay/mcp 0.39.10 and review any dependency update before proceeding.",
+      hint: "Verify @leadbay/mcp 0.40.0 and review any dependency update before proceeding.",
       details: { tool_names: tools.map((tool) => tool.name) },
     });
   }

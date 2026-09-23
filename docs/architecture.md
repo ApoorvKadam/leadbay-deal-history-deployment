@@ -98,7 +98,7 @@ Files: `src/leadbay/build-mock-fixtures.ts`, `mcp-client.ts`, `preview-deploymen
 
 **Outputs:** Immutable mock fixtures, a safety attestation, a redacted tool trace, accepted tool inputs, and a projected, not persisted, organization state.
 
-**Dependencies:** `@leadbay/mcp@0.39.10` and `@modelcontextprotocol/sdk@1.29.0`. The child environment is allowlisted. No mock write call runs before the read contract and safety attestation pass.
+**Dependencies:** `@leadbay/mcp@0.40.0` and `@modelcontextprotocol/sdk@1.29.0`. The child environment is allowlisted. No mock write call runs before the read contract and safety attestation pass.
 
 ## CLI Orchestrator
 

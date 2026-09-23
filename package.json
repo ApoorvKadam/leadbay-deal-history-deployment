@@ -23,7 +23,7 @@
     "demo": "tsx src/cli.ts demo --case fixtures/building-materials-distributor --out artifacts/building-materials-distributor"
   },
   "dependencies": {
-    "@leadbay/mcp": "0.39.10",
+    "@leadbay/mcp": "0.40.0",
     "@modelcontextprotocol/sdk": "1.29.0",
     "csv-parse": "5.6.0",
     "tldts": "7.0.17",

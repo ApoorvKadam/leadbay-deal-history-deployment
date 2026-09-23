@@ -1,6 +1,6 @@
 # Three-minute demo script
 
-This walkthrough uses the committed synthetic case. CI separately verifies the same code path with the real `@leadbay/mcp@0.39.10` process in mock mode. The example is not live Leadbay validation and no production account is touched.
+This walkthrough uses the committed synthetic case. CI separately verifies the same code path with the real `@leadbay/mcp@0.40.0` process in mock mode. The example is not live Leadbay validation and no production account is touched.
 
 1. **Show the source, 0:00 to 0:18.** Open the messy historical CSV and `customer-brief.yaml`. Point out inconsistent websites, missing values, repeated deals, the customer hypotheses, and the inactive-company veto.
 

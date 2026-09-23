@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@leadbay/mcp':
-        specifier: 0.39.10
-        version: 0.39.10(zod@3.25.76)
+        specifier: 0.40.0
+        version: 0.40.0(zod@3.25.76)
       '@modelcontextprotocol/sdk':
         specifier: 1.29.0
         version: 1.29.0(zod@3.25.76)
@@ -575,8 +575,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@leadbay/mcp@0.39.10':
-    resolution: {integrity: sha512-k8cm13sCit8u8g+03OwAS5oKLnZfAW0fGgKm9jy5NWZAXyXCRHlirh2VFrJ/h9oonHBFuJdQNzMHOPJ3AJycCQ==}
+  '@leadbay/mcp@0.40.0':
+    resolution: {integrity: sha512-+/v4I+m3/JTzwUrUZiW44Nz7/ClYG4eADd8YxlT/kzZX9OkNUumrFwiwdubgEAFySDDScYjDIhE63fmd6Lysrg==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2153,7 +2153,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@leadbay/mcp@0.39.10(zod@3.25.76)':
+  '@leadbay/mcp@0.40.0(zod@3.25.76)':
     dependencies:
       '@hono/node-server': 1.19.17(hono@4.13.8)
       '@modelcontextprotocol/sdk': 1.29.0(zod@3.25.76)
