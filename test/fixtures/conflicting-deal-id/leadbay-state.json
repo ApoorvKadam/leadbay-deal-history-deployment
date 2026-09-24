@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "region": "us",
+  "user": {
+    "id": "synthetic-user",
+    "admin": true,
+    "organization": { "id": 4242, "name": "Northstar Building Supply" }
+  },
+  "qualification_questions": [],
+  "ideal_buyer_profile": null,
+  "targeting_prompt": null
+}
