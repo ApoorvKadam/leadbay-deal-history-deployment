@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "case_id": "building-materials-distributor",
+  "selected_candidate_ids": [
+    "multi_territory_field_sales",
+    "fragmented_smb_market",
+    "crm_exportability"
+  ],
+  "exact_questions": {
+    "multi_territory_field_sales": "Is the company likely to operate field-sales teams across multiple territories?",
+    "fragmented_smb_market": "Is the company likely to sell B2B into fragmented small-business markets?",
+    "crm_exportability": "Is the company likely to use a CRM or ERP that can export historical deal data?"
+  },
+  "anti_pattern_ids": ["inactive_company"],
+  "rejected_candidates": {
+    "enterprise_scale": "contradicted",
+    "recent_funding": "high_missingness",
+    "warehouse_density": "unstable"
+  },
+  "minimum_policy_coverage": 0.8,
+  "minimum_top_bucket_lift_pp": 15,
+  "maximum_unacknowledged_vetoed_wins": 0
+}

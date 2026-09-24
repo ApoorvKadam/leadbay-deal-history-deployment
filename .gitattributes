@@ -1,0 +1,6 @@
+# Keep source and configuration files stable across Linux, macOS, and Windows checkouts.
+* text=auto eol=lf
+
+# RFC 4180 artifacts intentionally use CRLF; treat the carriage return as part of EOL.
+docs/examples/**/*.csv -text whitespace=cr-at-eol
+fixtures/**/*.csv -text whitespace=cr-at-eol
