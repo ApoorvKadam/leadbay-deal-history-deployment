@@ -8,6 +8,7 @@ import { loadCase } from "../../src/case/load-case.js";
 import { PolicyManifestSchema } from "../../src/case/schema.js";
 import { calculateHoldoutMetrics } from "../../src/evaluation/metrics.js";
 import { scorePolicy } from "../../src/evaluation/score-policy.js";
+import { parseCsvFile } from "../../src/ingestion/parse-csv.js";
 import { LeadbayTraceSchema } from "../../src/leadbay/trace.js";
 import { buildPolicyManifest } from "../../src/policy/manifest.js";
 import { selectPolicy } from "../../src/policy/select-policy.js";
@@ -82,6 +83,63 @@ describe("analysis artifact contracts", () => {
       }
       expect(readFileSync(join(finalDir, "deployment-report.md"), "utf8")).toContain(
         "## 16. Limitations and non-claims",
+      );
+    } finally {
+      rmSync(outputRoot, { recursive: true, force: true });
+    }
+  });
+
+  it("keeps committed analytical evidence byte-aligned with the current fixture", () => {
+    const outputRoot = mkdtempSync(join(tmpdir(), "leadbay-artifact-review-package-"));
+    try {
+      const finalDir = join(outputRoot, "building-materials-distributor");
+      const writer = ArtifactWriter.begin({
+        outputRoot,
+        finalDir,
+        caseId: "building-materials-distributor",
+        runId: "review-package",
+      });
+      const inputs = pipeline();
+      writeAnalysisArtifacts(writer, { ...inputs, mode: "analysis_only" });
+      writer.commit(ANALYSIS_ARTIFACTS);
+
+      for (const file of [
+        "source-fingerprint.json",
+        "data-quality.json",
+        "split-membership.json",
+        "signal-evidence.json",
+        "policy-manifest.json",
+        "holdout-evaluation.json",
+      ]) {
+        expect(
+          JSON.parse(
+            readFileSync(join("docs/examples/building-materials-distributor", file), "utf8"),
+          ),
+          file,
+        ).toEqual(JSON.parse(readFileSync(join(finalDir, file), "utf8")));
+      }
+      for (const file of ["data-quality.md", "prospect-preview.csv"]) {
+        expect(
+          readFileSync(join("docs/examples/building-materials-distributor", file), "utf8"),
+          file,
+        ).toBe(readFileSync(join(finalDir, file), "utf8"));
+      }
+
+      const committedNormalized = parseCsvFile(
+        "docs/examples/building-materials-distributor/normalized-deals.redacted.csv",
+      );
+      const generatedNormalized = parseCsvFile(join(finalDir, "normalized-deals.redacted.csv"));
+      expect(committedNormalized.headers).toEqual(generatedNormalized.headers);
+      expect(
+        committedNormalized.rows.map((row) => ({
+          ...row.values,
+          fields: JSON.parse(row.values.fields ?? "{}"),
+        })),
+      ).toEqual(
+        generatedNormalized.rows.map((row) => ({
+          ...row.values,
+          fields: JSON.parse(row.values.fields ?? "{}"),
+        })),
       );
     } finally {
       rmSync(outputRoot, { recursive: true, force: true });

@@ -1,0 +1,55 @@
+{
+  "anti_pattern_additions": [
+    {
+      "source": "customer_brief",
+      "text": "Inactive, dissolved, or liquidated companies",
+      "veto_id": "inactive_company"
+    }
+  ],
+  "case_id": "building-materials-distributor",
+  "leadbay_state": {
+    "existing_question_count": 2,
+    "free_question_slots": 3
+  },
+  "question_additions": [
+    {
+      "candidate_id": "fragmented_smb_market",
+      "direction_stability": 1,
+      "effect_pp": 47.91812865497076,
+      "source": "historical_evidence",
+      "text": "Is the company likely to sell B2B into fragmented small-business markets?",
+      "training_support": 34
+    },
+    {
+      "candidate_id": "multi_territory_field_sales",
+      "direction_stability": 1,
+      "effect_pp": 44.59180666077218,
+      "source": "historical_evidence",
+      "text": "Is the company likely to operate field-sales teams across multiple territories?",
+      "training_support": 35
+    },
+    {
+      "candidate_id": "multi_site_operations",
+      "direction_stability": 0.95,
+      "effect_pp": 30.023391812865498,
+      "source": "historical_evidence",
+      "text": "Is the company likely to operate across multiple business locations?",
+      "training_support": 34
+    }
+  ],
+  "required_human_approvals": [
+    "qualification_question_additions",
+    "ideal_buyer_profile_anti_pattern_additions"
+  ],
+  "reserve_signals": [],
+  "scenario": "synthetic",
+  "schema_version": "1.0",
+  "source_fingerprint": "sha256:0c58a1fc32b148c78cfcc6a20fe093ec9baf18913ed453a206fdbf02960bdc67",
+  "split": {
+    "bootstrap_seed": 20260922,
+    "holdout_cutoff_date": "2024-01-15",
+    "holdout_rows": 20,
+    "strategy": "grouped_temporal",
+    "training_rows": 60
+  }
+}

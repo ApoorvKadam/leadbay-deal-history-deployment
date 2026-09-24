@@ -1,0 +1,801 @@
+source_record_id,source_rows,company_name,company_identity_group_id,canonical_domain,domain_source,location,close_date,outcome,fields,warnings
+D-001,2,Regional Supply Company 01,"name-location:regional supply company 01|dallas, tx","",none,"dallas, tx",2019-01-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 1200,
+  ""Legal Status"": ""inactive"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",Primary Contact Email uses a consumer mailbox domain; no company domain was derived.
+D-002,3,Regional Supply Company 02,domain:regional-supplier-02.example,regional-supplier-02.example,website,"denver, co",2019-02-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 72,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-003,4,Regional Supply Company 03,domain:regional-supplier-03.example,regional-supplier-03.example,website,"tulsa, ok",2019-03-15,positive,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 109,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-004,5,Regional Supply Company 04,domain:regional-supplier-04.example,regional-supplier-04.example,website,"phoenix, az",2019-04-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 146,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-005,6,Regional Supply Company 05,domain:regional-supplier-05.example,regional-supplier-05.example,website,"columbus, oh",2019-05-15,negative,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 183,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-006,17,Regional Supply Company 06,domain:regional-supplier-06.example,regional-supplier-06.example,website,"dallas, tx",2020-04-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 1500,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-007,18,Regional Supply Company 07,domain:regional-supplier-07.example,regional-supplier-07.example,website,"denver, co",2020-05-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 257,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-008,19,Regional Supply Company 08,domain:regional-supplier-08.example,regional-supplier-08.example,website,"tulsa, ok",2020-06-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 294,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-009,20,Regional Supply Company 09,domain:regional-supplier-09.example,regional-supplier-09.example,website,"phoenix, az",2020-07-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 331,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-010,21,Regional Supply Company 10,domain:regional-supplier-10.example,regional-supplier-10.example,website,"columbus, oh",2020-08-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 368,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-011,22,Regional Supply Company 11,domain:regional-supplier-11.example,regional-supplier-11.example,website,"dallas, tx",2020-09-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 1800,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-012,23,Regional Supply Company 12,"name-location:regional supply company 12|denver, co","",none,"denver, co",2020-10-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 442,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",Primary Contact Email uses a consumer mailbox domain; no company domain was derived.
+D-013,24,Regional Supply Company 13,domain:regional-supplier-13.example,regional-supplier-13.example,website,"tulsa, ok",2020-11-15,negative,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 479,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-014,25,Regional Supply Company 14,domain:regional-supplier-14.example,regional-supplier-14.example,website,"phoenix, az",2020-12-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 516,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-015,26;27,Regional Supply Company 15,domain:regional-supplier-15.example,regional-supplier-15.example,website,"columbus, oh",2021-01-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 553,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-016,28,Regional Supply Company 16,domain:regional-supplier-16.example,regional-supplier-16.example,website,"dallas, tx",2021-02-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 2100,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-017,29,Regional Supply Company 17,domain:regional-supplier-17.example,regional-supplier-17.example,website,"denver, co",2021-03-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 627,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-018,30,Regional Supply Company 18,domain:regional-supplier-18.example,regional-supplier-18.example,website,"tulsa, ok",2021-04-15,negative,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 664,
+  ""Legal Status"": ""inactive"",
+  ""Loss Reason"": ""limited operating footprint"",
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-019,31,Regional Supply Company 19,domain:regional-supplier-19.example,regional-supplier-19.example,website,"phoenix, az",2021-05-15,positive,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 701,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-020,32,Regional Supply Company 20,domain:regional-supplier-20.example,regional-supplier-20.example,website,"columbus, oh",2021-06-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 738,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-021,33,Regional Supply Company 21,domain:regional-supplier-21.example,regional-supplier-21.example,website,"dallas, tx",2021-07-15,negative,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 1200,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-022,34,Regional Supply Company 22,domain:regional-supplier-22.example,regional-supplier-22.example,website,"denver, co",2021-08-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 52,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-023,35,Regional Supply Company 23,"name-location:regional supply company 23|tulsa, ok","",none,"tulsa, ok",2021-09-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 89,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",Primary Contact Email uses a consumer mailbox domain; no company domain was derived.
+D-024,36,Regional Supply Company 24,domain:regional-supplier-24.example,regional-supplier-24.example,website,"phoenix, az",2021-10-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 126,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-025,37,Regional Supply Company 25,domain:regional-supplier-25.example,regional-supplier-25.example,website,"columbus, oh",2021-11-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 163,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-026,38,Regional Supply Company 26,domain:regional-supplier-26.example,regional-supplier-26.example,website,"dallas, tx",2021-12-15,negative,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 1500,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""limited operating footprint"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-027,39,Regional Supply Company 27,domain:regional-supplier-27.example,regional-supplier-27.example,website,"denver, co",2022-01-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 237,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-028,40,Regional Supply Company 28,domain:regional-supplier-28.example,regional-supplier-28.example,website,"tulsa, ok",2022-02-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 274,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-029,41,Regional Supply Company 29,domain:regional-supplier-29.example,regional-supplier-29.example,website,"phoenix, az",2022-03-15,negative,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 311,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-030,42,Regional Supply Company 30,domain:regional-supplier-30.example,regional-supplier-30.example,website,"columbus, oh",2022-04-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 348,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-031,43,Regional Supply Company 31,domain:regional-supplier-31.example,regional-supplier-31.example,website,"dallas, tx",2022-05-15,negative,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 1800,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-032,44,Regional Supply Company 32,domain:regional-supplier-32.example,regional-supplier-32.example,website,"denver, co",2022-06-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 422,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-033,45,Regional Supply Company 33,domain:regional-supplier-33.example,regional-supplier-33.example,website,"tulsa, ok",2022-07-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 459,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-034,46,Regional Supply Company 34,"name-location:regional supply company 34|phoenix, az","",none,"phoenix, az",2022-08-15,negative,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 496,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""limited operating footprint"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",Primary Contact Email uses a consumer mailbox domain; no company domain was derived.
+D-035,47,Regional Supply Company 35,domain:regional-supplier-35.example,regional-supplier-35.example,website,"columbus, oh",2022-09-15,positive,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 533,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-036,48,Regional Supply Company 36,domain:regional-supplier-36.example,regional-supplier-36.example,website,"dallas, tx",2022-10-15,negative,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 2100,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""limited operating footprint"",
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-037,49,Regional Supply Company 37,domain:regional-supplier-37.example,regional-supplier-37.example,website,"denver, co",2022-11-15,negative,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 607,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-038,50,Regional Supply Company 38,domain:regional-supplier-38.example,regional-supplier-38.example,website,"tulsa, ok",2022-12-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 644,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-039,51,Regional Supply Company 39,domain:regional-supplier-39.example,regional-supplier-39.example,website,"phoenix, az",2023-01-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 681,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-040,52,Regional Supply Company 40,domain:regional-supplier-40.example,regional-supplier-40.example,website,"columbus, oh",2023-02-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 718,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-041,53,Regional Supply Company 41,domain:regional-supplier-41.example,regional-supplier-41.example,website,"dallas, tx",2023-03-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 1200,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-042,54,Regional Supply Company 42,domain:regional-supplier-42.example,regional-supplier-42.example,website,"denver, co",2023-04-15,negative,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 792,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""limited operating footprint"",
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-043,55,Regional Supply Company 43,domain:regional-supplier-43.example,regional-supplier-43.example,website,"tulsa, ok",2023-05-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 69,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-044,56,Regional Supply Company 44,domain:regional-supplier-44.example,regional-supplier-44.example,website,"phoenix, az",2023-06-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 106,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-045,57,Regional Supply Company 45,"name-location:regional supply company 45|columbus, oh","",none,"columbus, oh",2023-07-15,negative,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 143,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",Primary Contact Email uses a consumer mailbox domain; no company domain was derived.
+D-046,58,Regional Supply Company 46,domain:regional-supplier-46.example,regional-supplier-46.example,website,"dallas, tx",2023-08-15,negative,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 1500,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""limited operating footprint"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-047,59,Regional Supply Company 47,domain:regional-supplier-47.example,regional-supplier-47.example,website,"denver, co",2023-09-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 217,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-048,60,Regional Supply Company 48,domain:regional-supplier-48.example,regional-supplier-48.example,website,"tulsa, ok",2023-10-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 254,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-049,61,Regional Supply Company 49,domain:regional-supplier-49.example,regional-supplier-49.example,website,"phoenix, az",2023-11-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 291,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-050,62,Regional Supply Company 50,domain:regional-supplier-50.example,regional-supplier-50.example,website,"columbus, oh",2023-12-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 328,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-051,63,Regional Supply Company 51,domain:regional-supplier-51.example,regional-supplier-51.example,website,"dallas, tx",2024-01-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 1800,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-052,64,Regional Supply Company 52,domain:regional-supplier-52.example,regional-supplier-52.example,website,"denver, co",2024-02-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 402,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-053,65,Regional Supply Company 53,domain:regional-supplier-53.example,regional-supplier-53.example,website,"tulsa, ok",2024-03-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 439,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-054,66,Regional Supply Company 54,domain:regional-supplier-54.example,regional-supplier-54.example,website,"phoenix, az",2024-04-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 476,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-055,67,Regional Supply Company 55,domain:regional-supplier-55.example,regional-supplier-55.example,website,"columbus, oh",2024-05-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 513,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-056,68,Regional Supply Company 56,"name-location:regional supply company 56|dallas, tx","",none,"dallas, tx",2024-06-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 2100,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",Primary Contact Email uses a consumer mailbox domain; no company domain was derived.
+D-057,69,Regional Supply Company 57,domain:regional-supplier-57.example,regional-supplier-57.example,website,"denver, co",2024-07-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 587,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-058,70,Regional Supply Company 58,domain:regional-supplier-58.example,regional-supplier-58.example,website,"tulsa, ok",2024-08-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 624,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-059,71,Regional Supply Company 59,domain:regional-supplier-59.example,regional-supplier-59.example,website,"phoenix, az",2024-09-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 661,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-060,72,Regional Supply Company 60,domain:regional-supplier-60.example,regional-supplier-60.example,website,"columbus, oh",2024-10-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 698,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-061,73,Regional Supply Company 61,domain:regional-supplier-61.example,regional-supplier-61.example,website,"dallas, tx",2024-11-15,negative,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 1200,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-062,74,Regional Supply Company 62,domain:regional-supplier-62.example,regional-supplier-62.example,website,"denver, co",2024-12-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 772,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-063,75,Regional Supply Company 63,domain:regional-supplier-63.example,regional-supplier-63.example,website,"tulsa, ok",2025-01-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 49,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-064,76,Regional Supply Company 64,domain:regional-supplier-64.example,regional-supplier-64.example,website,"phoenix, az",2025-02-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 86,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-065,77,Regional Supply Company 65,domain:regional-supplier-65.example,regional-supplier-65.example,website,"columbus, oh",2025-03-15,negative,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 123,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-066,78,Regional Supply Company 66,domain:regional-supplier-66.example,regional-supplier-66.example,website,"dallas, tx",2025-04-15,negative,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 1500,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": ""limited operating footprint"",
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-067,79,Regional Supply Company 67,"name-location:regional supply company 67|denver, co","",none,"denver, co",2025-05-15,positive,"{
+  ""Operating Footprint"": ""single-site operation"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 197,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",Primary Contact Email uses a consumer mailbox domain; no company domain was derived.
+D-068,80,Regional Supply Company 68,domain:regional-supplier-68.example,regional-supplier-68.example,website,"tulsa, ok",2025-06-15,positive,"{
+  ""Operating Footprint"": ""local storefront"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 234,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+D-069,81,Regional Supply Company 69,domain:regional-supplier-69.example,regional-supplier-69.example,website,"phoenix, az",2025-07-15,negative,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""enterprise accounts"",
+  ""Employee Count"": 271,
+  ""Legal Status"": ""inactive"",
+  ""Loss Reason"": ""no territory fit"",
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""inside sales"",
+  ""Warehouse Network"": false
+}",""
+D-070,82,Regional Supply Company 70,domain:regional-supplier-70.example,regional-supplier-70.example,website,"columbus, oh",2025-08-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""consumer mass market"",
+  ""Employee Count"": 308,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": false
+}",""
+WH-01,7,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2019-06-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": true
+}",""
+WH-02,8,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2019-07-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""field sales"",
+  ""Warehouse Network"": true
+}",""
+WH-03,9,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2019-08-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": true
+}",""
+WH-04,10,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2019-09-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""field sales"",
+  ""Warehouse Network"": true
+}",""
+WH-05,11,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2019-10-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": false,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": true
+}",""
+WH-06,12,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2019-11-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""field sales"",
+  ""Warehouse Network"": true
+}",""
+WH-07,13,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2019-12-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": true
+}",""
+WH-08,14,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2020-01-15,positive,"{
+  ""Operating Footprint"": ""multi-site operations"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": true,
+  ""Sales Motion"": ""field sales"",
+  ""Warehouse Network"": true
+}",""
+WH-09,15,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2020-02-15,positive,"{
+  ""Operating Footprint"": ""regional branch network"",
+  ""Customer Base"": ""local business network"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""territory sales"",
+  ""Warehouse Network"": true
+}",""
+WH-10,16,Central Builders Warehouse Network,domain:central-warehouse.example,central-warehouse.example,website,"kansas city, mo",2020-03-15,positive,"{
+  ""Operating Footprint"": ""territory service network"",
+  ""Customer Base"": ""fragmented smb"",
+  ""Employee Count"": 35,
+  ""Legal Status"": ""active"",
+  ""Loss Reason"": null,
+  ""Recent Funding"": null,
+  ""Sales Motion"": ""field sales"",
+  ""Warehouse Network"": true
+}",""

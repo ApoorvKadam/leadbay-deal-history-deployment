@@ -3,7 +3,10 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { runAnalyze, runDemo, runPreview, runValidate } from "../../src/commands.js";
-import type { LeadbayPreviewResult } from "../../src/leadbay/preview-deployment.js";
+import type {
+  LeadbayPreviewResult,
+  RunLeadbayPreviewInput,
+} from "../../src/leadbay/preview-deployment.js";
 import { ArtifactWriter } from "../../src/reporting/artifacts.js";
 import { AppError } from "../../src/shared/errors.js";
 
@@ -163,6 +166,49 @@ describe("command workflows", () => {
     expect(error.code).toBe("MANIFEST_SOURCE_MISMATCH");
     expect(error.details).toMatchObject({ policy_content_matches: false });
     expect(mcpCalls).toBe(0);
+  });
+
+  it("preview can replace its own previous output directory", async () => {
+    const outputRoot = root();
+    const analysisDir = join(outputRoot, "analysis");
+    const outDir = join(outputRoot, "preview");
+    await runAnalyze({
+      caseDir: "fixtures/building-materials-distributor",
+      outDir: analysisDir,
+      dependencies: { runId: () => "analysis-run" },
+    });
+    const manifestPath = join(analysisDir, "policy-manifest.json");
+    let mcpCalls = 0;
+    const previewDependencies = {
+      mcpRunner: async (input: RunLeadbayPreviewInput) => {
+        mcpCalls++;
+        const value = previewResult();
+        value.preview.starting_state = input.state;
+        value.preview.projected_state = input.state;
+        return value;
+      },
+      runId: () => "preview-run",
+    };
+
+    await runPreview({
+      caseDir: "fixtures/building-materials-distributor",
+      manifestPath,
+      outDir,
+      dependencies: previewDependencies,
+    });
+    await runPreview({
+      caseDir: "fixtures/building-materials-distributor",
+      manifestPath,
+      outDir,
+      dependencies: previewDependencies,
+    });
+
+    expect(mcpCalls).toBe(2);
+    expect(JSON.parse(readFileSync(join(outDir, "run-metadata.json"), "utf8"))).toMatchObject({
+      case_id: "building-materials-distributor",
+      mode: "preview_only",
+      status: "preview_only",
+    });
   });
 
   it("demo performs analysis then preview and commits the full inventory", async () => {

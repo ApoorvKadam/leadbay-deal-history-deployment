@@ -81,5 +81,13 @@ jobs:
           LEADBAY_BASE_URL: https://leadbay.invalid
         run: node dist/cli.js demo --case fixtures/building-materials-distributor --out artifacts/building-materials-distributor
 
+      - name: Upload real MCP evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: real-mcp-evidence-${{ matrix.os }}
+          path: artifacts/building-materials-distributor/
+          if-no-files-found: error
+          retention-days: 90
+
       - name: Verify tracked tree remains unchanged
         run: git diff --exit-code

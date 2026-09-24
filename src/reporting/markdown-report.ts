@@ -157,7 +157,7 @@ This is a local policy ordering. It is not a Leadbay score.
 - Vetoed historical wins: ${input.evaluation.vetoed_historical_win_ids.join(", ") || "none"}
 - Unknowns: ${unknowns.join("; ") || "none"}
 
-## 13. Exact Leadbay MCP deployment preview
+## 13. Leadbay MCP deployment preview (locally projected state)
 
 ${preview}
 
@@ -165,7 +165,7 @@ ${preview}
 
 ${list(input.manifest.required_human_approvals, "No write approval is currently requested.")}
 
-Question additions are previewed before anti-pattern additions. In Leadbay, an anti-pattern update draws on the org's AI quota and triggers targeting regeneration, including lens refreshes. It also makes the buyer profile user-managed, so Leadbay stops rewriting that profile automatically. Those side effects belong in the approval conversation even though this repository never persists the mock write.
+Question additions affect scoring for all leads. They are previewed before anti-pattern additions because Leadbay's anti-pattern update can trigger targeting regeneration, lens refreshes, and, when questions have not been written by hand, possibly new questions. Public documentation does not state whether an MCP addition counts as hand-written, so this order avoids depending on that behavior. The anti-pattern update also draws on the org's AI quota and makes the buyer profile user-managed, so Leadbay stops rewriting that profile automatically. Those side effects belong in the approval conversation even though this repository never persists the mock write.
 
 ## 15. Monitoring plan for the first 30 days
 
@@ -179,6 +179,8 @@ Question additions are previewed before anti-pattern additions. In Leadbay, an a
 - The dataset and customer are synthetic.
 - The customer brief marks proposed traits as publicly observable; this demo does not independently verify that Leadbay can infer each trait from public text.
 - The CRM/enrichment evidence does not validate Leadbay's own public-text answer to a proposed question. A real deployment would qualify historical companies through Leadbay and compare those responses with won/lost outcomes.
+- Candidate selection is marginal, not redundancy-aware. In this synthetic case, the field-sales territory and multi-site questions both carry geographic-reach information and would be reviewed for consolidation before customer approval.
+- CRM fields reflect export-time state. A historical veto match needs a status at close check before concluding that the rule would have rejected a past win.
 - Small-sample associations are governance aids, not statistical proof.
 - The local policy score is not Leadbay's score.
 - Mock-mode write previews are projected, not persisted.

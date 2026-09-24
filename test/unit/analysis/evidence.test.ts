@@ -82,7 +82,7 @@ describe("deriveSignalEvidence", () => {
     expect(classifications).toMatchObject({
       multi_territory_field_sales: "eligible",
       fragmented_smb_market: "eligible",
-      crm_exportability: "eligible",
+      multi_site_operations: "eligible",
       enterprise_scale: "contradicted",
       recent_funding: "high_missingness",
       warehouse_density: "unstable",

@@ -20,7 +20,7 @@ const headings = [
   "Held-out evaluation",
   "Current-prospect preview",
   "False positives, false negatives, and unknowns",
-  "Exact Leadbay MCP deployment preview",
+  "Leadbay MCP deployment preview (locally projected state)",
   "Required human approvals",
   "Monitoring plan for the first 30 days",
   "Limitations and non-claims",
@@ -97,6 +97,8 @@ describe("renderDeploymentReport", () => {
     expect(report).toContain("qualification_question_additions");
     expect(report).toMatch(/anti-pattern.*targeting regeneration/i);
     expect(report).toMatch(/AI quota/i);
+    expect(report).toMatch(/question additions.*scoring.*all leads/i);
+    expect(report).toMatch(/status at close/i);
     expect(report).not.toContain("(s)");
     expect(report).toContain(
       "The local policy review selected no question additions and 1 explicit anti-pattern addition.",

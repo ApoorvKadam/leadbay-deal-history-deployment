@@ -41,12 +41,12 @@ candidate_signals:
     favorable_values: [Fragmented SMB, Local business network]
     publicly_observable: true
     question: Is the company likely to sell B2B into fragmented small-business markets?
-  - id: crm_exportability
-    source_column: Commercial Systems
+  - id: multi_site_operations
+    source_column: Operating Footprint
     kind: contains_any
-    favorable_values: [CRM, ERP, Salesforce, HubSpot, Dynamics]
+    favorable_values: [Multi-site, Regional branch, Territory service]
     publicly_observable: true
-    question: Is the company likely to use a CRM or ERP that can export historical deal data?
+    question: Is the company likely to operate across multiple business locations?
   - id: enterprise_scale
     source_column: Employee Count
     kind: numeric_gte

@@ -55,7 +55,7 @@ const HISTORY_HEADERS = [
   "Close Date",
   "Sales Motion",
   "Customer Base",
-  "Commercial Systems",
+  "Operating Footprint",
   "Employee Count",
   "Recent Funding",
   "Warehouse Network",
@@ -74,7 +74,7 @@ const PROSPECT_HEADERS = [
   "Location",
   "Sales Motion",
   "Customer Base",
-  "Commercial Systems",
+  "Operating Footprint",
   "Employee Count",
   "Recent Funding",
   "Warehouse Network",
@@ -102,13 +102,13 @@ function historyRows(): Array<Record<string, string | number | boolean | null>> 
     const combo = warehouseGroup ? 7 : companyIndex % 8;
     const fieldSales = warehouseGroup || (combo & 1) !== 0;
     const fragmentedSmb = warehouseGroup || (combo & 2) !== 0;
-    const crmExportable = warehouseGroup || (combo & 4) !== 0;
+    const multiSiteOperations = warehouseGroup || (combo & 4) !== 0;
     const enterpriseScale = !warehouseGroup && companyIndex % 5 === 0;
     const deterministicNoise = (random() - 0.5) * 1.4;
     const score =
       1.6 * Number(fieldSales) +
       1.3 * Number(fragmentedSmb) +
-      1.1 * Number(crmExportable) -
+      1.1 * Number(multiSiteOperations) -
       1.4 * Number(enterpriseScale) +
       deterministicNoise;
     const outcome = warehouseGroup || score >= 1.55 ? "Won" : "Lost";
@@ -140,15 +140,15 @@ function historyRows(): Array<Record<string, string | number | boolean | null>> 
       : position % 2 === 0
         ? "Enterprise accounts"
         : "Consumer mass market";
-    const commercialSystems = crmExportable
+    const operatingFootprint = multiSiteOperations
       ? position % 3 === 0
-        ? "Salesforce CRM"
+        ? "Multi-site operations"
         : position % 3 === 1
-          ? "HubSpot CRM and ERP export"
-          : "Microsoft Dynamics ERP"
+          ? "Regional branch network"
+          : "Territory service network"
       : position % 2 === 0
-        ? "Spreadsheets"
-        : "Email only";
+        ? "Single-site operation"
+        : "Local storefront";
     const employeeCount = enterpriseScale
       ? 1200 + (companyIndex % 4) * 300
       : 35 + ((Math.max(companyIndex, 0) * 37) % 760);
@@ -181,11 +181,11 @@ function historyRows(): Array<Record<string, string | number | boolean | null>> 
         ? ""
         : companyIndex % 2 === 0
           ? "No territory fit"
-          : "Low sales-system maturity",
+          : "Limited operating footprint",
       "Close Date": monthlyDate(position),
       "Sales Motion": salesMotion,
       "Customer Base": customerBase,
-      "Commercial Systems": commercialSystems,
+      "Operating Footprint": operatingFootprint,
       "Employee Count": employeeCount,
       "Recent Funding": recentFunding,
       "Warehouse Network": warehouseGroup ? "true" : "false",
@@ -244,7 +244,7 @@ function prospectRows(): Array<Record<string, string | number | boolean | null>>
       Location: "Denver, CO",
       "Sales Motion": "Territory sales",
       "Customer Base": "Fragmented SMB",
-      "Commercial Systems": "Salesforce CRM and NetSuite ERP",
+      "Operating Footprint": "Regional branch network",
       "Employee Count": 280,
       "Recent Funding": "false",
       "Warehouse Network": "true",
@@ -258,7 +258,7 @@ function prospectRows(): Array<Record<string, string | number | boolean | null>>
       Location: "Tulsa, OK",
       "Sales Motion": "Field sales",
       "Customer Base": "",
-      "Commercial Systems": "HubSpot CRM",
+      "Operating Footprint": "Territory service network",
       "Employee Count": 95,
       "Recent Funding": "",
       "Warehouse Network": "false",
@@ -272,7 +272,7 @@ function prospectRows(): Array<Record<string, string | number | boolean | null>>
       Location: "Phoenix, AZ",
       "Sales Motion": "Field sales",
       "Customer Base": "Local business network",
-      "Commercial Systems": "Spreadsheets",
+      "Operating Footprint": "Single-site operation",
       "Employee Count": 20,
       "Recent Funding": "",
       "Warehouse Network": "false",
@@ -286,7 +286,7 @@ function prospectRows(): Array<Record<string, string | number | boolean | null>>
       Location: "Columbus, OH",
       "Sales Motion": "Inside sales",
       "Customer Base": "Consumer mass market",
-      "Commercial Systems": "Email only",
+      "Operating Footprint": "Local storefront",
       "Employee Count": 45,
       "Recent Funding": "false",
       "Warehouse Network": "false",
@@ -300,7 +300,7 @@ function prospectRows(): Array<Record<string, string | number | boolean | null>>
       Location: "Dallas, TX",
       "Sales Motion": "Territory sales",
       "Customer Base": "Fragmented SMB",
-      "Commercial Systems": "Dynamics ERP and CRM",
+      "Operating Footprint": "Multi-site operations",
       "Employee Count": 310,
       "Recent Funding": "true",
       "Warehouse Network": "true",

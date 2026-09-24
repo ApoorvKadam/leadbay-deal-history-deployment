@@ -52,8 +52,8 @@ describe("buildPolicyManifest", () => {
       free_question_slots: 3,
     });
     expect(first.manifest.question_additions.map((item) => item.candidate_id).sort()).toEqual([
-      "crm_exportability",
       "fragmented_smb_market",
+      "multi_site_operations",
       "multi_territory_field_sales",
     ]);
     expect(first.manifest.anti_pattern_additions).toEqual([

@@ -47,6 +47,7 @@ describe("veto evidence gate", () => {
       error = caught as AppError;
     }
     expect(error?.exitCode).toBe(3);
+    expect(error?.hint).toMatch(/status at close|close date/i);
     expect(mcpStarts).toBe(0);
     const failureDir = join(
       dirname(outDir),
@@ -66,6 +67,8 @@ describe("veto evidence gate", () => {
     }
     expect(existsSync(join(failureDir, "leadbay-mcp-trace.json"))).toBe(false);
     expect(readFileSync(join(failureDir, "failure.json"), "utf8")).toContain("D-062");
-    expect(readFileSync(join(failureDir, "deployment-report.md"), "utf8")).toContain("D-062");
+    const report = readFileSync(join(failureDir, "deployment-report.md"), "utf8");
+    expect(report).toContain("D-062");
+    expect(report).toMatch(/export-time.*status at close|status at close.*export-time/i);
   });
 });

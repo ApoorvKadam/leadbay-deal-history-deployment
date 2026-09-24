@@ -1,0 +1,9 @@
+{
+  "attested": true,
+  "fixture_backed_read": true,
+  "invalid_base_url": true,
+  "mock_banner": true,
+  "mock_environment": true,
+  "no_production_hosts": true,
+  "tool_contracts": true
+}

@@ -27,6 +27,7 @@ import { AppError, asAppError } from "./shared/errors.js";
 import { stableStringify } from "./shared/stable-json.js";
 
 export const PREVIEW_ARTIFACTS = [
+  "run-metadata.json",
   "leadbay-mcp-trace.json",
   "mock-session-attestation.json",
   "leadbay-deployment-preview.json",
@@ -123,7 +124,7 @@ function evidenceGate(bundle: AnalysisBundle): void {
       exitCode: 3,
       message:
         "An explicit veto matches at least one historical win without an acknowledged tradeoff.",
-      hint: "Review the vetoed historical wins before any Leadbay preview.",
+      hint: "Review the named wins and verify the veto matched their status at close, not only the export-time CRM state, before any Leadbay preview.",
       details: { historical_win_ids: bundle.selection.vetoedHistoricalWinIds },
     });
   }
@@ -142,6 +143,13 @@ function writePreviewArtifacts(
   previewResult: LeadbayPreviewResult,
   mode: "preview_only" | "complete",
 ): void {
+  writer.writeJson("run-metadata.json", {
+    schema_version: "1.0",
+    case_id: bundle.loaded.brief.case_id,
+    scenario: "synthetic",
+    mode,
+    status: mode,
+  });
   writer.writeJson("leadbay-mcp-trace.json", previewResult.trace);
   writer.writeJson("mock-session-attestation.json", previewResult.attestation);
   writer.writeJson("leadbay-deployment-preview.json", previewResult.preview);

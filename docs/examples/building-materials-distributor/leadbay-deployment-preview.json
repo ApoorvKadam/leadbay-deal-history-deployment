@@ -1,0 +1,91 @@
+{
+  "accepted_tool_inputs": [
+    {
+      "input": {
+        "add": [
+          "Is the company likely to sell B2B into fragmented small-business markets?",
+          "Is the company likely to operate field-sales teams across multiple territories?",
+          "Is the company likely to operate across multiple business locations?"
+        ]
+      },
+      "name": "leadbay_set_qualification_questions"
+    },
+    {
+      "input": {
+        "add_anti_patterns": ["Inactive, dissolved, or liquidated companies"]
+      },
+      "name": "leadbay_set_qualification_questions"
+    }
+  ],
+  "persisted": false,
+  "projected_state": {
+    "ideal_buyer_profile": {
+      "anti_patterns": ["Consumer-only retailers", "Inactive, dissolved, or liquidated companies"],
+      "key_characteristics": ["B2B", "repeat purchase potential"],
+      "summary": "Regional B2B suppliers and contractors"
+    },
+    "qualification_questions": [
+      {
+        "lang": "en",
+        "question": "Is the company likely to sell through a repeatable B2B sales process?"
+      },
+      {
+        "lang": "en",
+        "question": "Is the company likely to have a dedicated commercial team?"
+      },
+      {
+        "lang": "en",
+        "question": "Is the company likely to sell B2B into fragmented small-business markets?"
+      },
+      {
+        "lang": "en",
+        "question": "Is the company likely to operate field-sales teams across multiple territories?"
+      },
+      {
+        "lang": "en",
+        "question": "Is the company likely to operate across multiple business locations?"
+      }
+    ],
+    "region": "us",
+    "schema_version": "1.0",
+    "targeting_prompt": "Prioritize regional business suppliers serving contractors.",
+    "user": {
+      "admin": true,
+      "id": "synthetic-user",
+      "organization": {
+        "id": 4242,
+        "name": "Northstar Building Supply"
+      }
+    }
+  },
+  "schema_version": "1.0",
+  "starting_state": {
+    "ideal_buyer_profile": {
+      "anti_patterns": ["Consumer-only retailers"],
+      "key_characteristics": ["B2B", "repeat purchase potential"],
+      "summary": "Regional B2B suppliers and contractors"
+    },
+    "qualification_questions": [
+      {
+        "lang": "en",
+        "question": "Is the company likely to sell through a repeatable B2B sales process?"
+      },
+      {
+        "lang": "en",
+        "question": "Is the company likely to have a dedicated commercial team?"
+      }
+    ],
+    "region": "us",
+    "schema_version": "1.0",
+    "targeting_prompt": "Prioritize regional business suppliers serving contractors.",
+    "user": {
+      "admin": true,
+      "id": "synthetic-user",
+      "organization": {
+        "id": 4242,
+        "name": "Northstar Building Supply"
+      }
+    }
+  },
+  "status": "projected"
+}
