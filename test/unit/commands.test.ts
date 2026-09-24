@@ -165,6 +165,40 @@ describe("command workflows", () => {
     expect(mcpCalls).toBe(0);
   });
 
+  it("preview can safely replace its own prior output package", async () => {
+    const outputRoot = root();
+    const analysisDir = join(outputRoot, "analysis");
+    const outDir = join(outputRoot, "preview");
+    await runAnalyze({
+      caseDir: "fixtures/building-materials-distributor",
+      outDir: analysisDir,
+      dependencies: { runId: () => "analysis-run" },
+    });
+    const manifestPath = join(analysisDir, "policy-manifest.json");
+    const dependencies = {
+      mcpRunner: async () => previewResult(),
+      runId: () => "preview-rerun",
+    };
+
+    await runPreview({
+      caseDir: "fixtures/building-materials-distributor",
+      manifestPath,
+      outDir,
+      dependencies,
+    });
+    const second = await runPreview({
+      caseDir: "fixtures/building-materials-distributor",
+      manifestPath,
+      outDir,
+      dependencies,
+    });
+
+    expect(second.output_dir).toBe(outDir);
+    expect(readFileSync(join(outDir, "run-metadata.json"), "utf8")).toContain(
+      '"mode": "preview_only"',
+    );
+  });
+
   it("demo performs analysis then preview and commits the full inventory", async () => {
     const outputRoot = root();
     const outDir = join(outputRoot, "demo");
