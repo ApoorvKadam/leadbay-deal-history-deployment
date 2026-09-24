@@ -1,0 +1,117 @@
+{
+  "items": [
+    {
+      "duration_ms": 0,
+      "ended_at": "1970-01-01T00:00:00.000Z",
+      "input": {},
+      "result": [
+        {
+          "name": "leadbay_get_qualification_questions",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "_triggered_by": {
+                "type": "string"
+              }
+            },
+            "required": ["_triggered_by"]
+          }
+        },
+        {
+          "name": "leadbay_set_qualification_questions",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "_triggered_by": {
+                "type": "string"
+              },
+              "add": {
+                "type": "array"
+              },
+              "add_anti_patterns": {
+                "type": "array"
+              }
+            },
+            "required": ["_triggered_by"]
+          }
+        }
+      ],
+      "sequence": 1,
+      "session_attested": false,
+      "started_at": "1970-01-01T00:00:00.000Z",
+      "status": "success",
+      "tool_name": "tools/list"
+    },
+    {
+      "duration_ms": 0,
+      "ended_at": "1970-01-01T00:00:01.000Z",
+      "input": {
+        "_triggered_by": "leadbay-deploy demo"
+      },
+      "result": {
+        "count": 2,
+        "ideal_buyer_profile": {
+          "anti_patterns": ["Consumer-only retailers"],
+          "key_characteristics": ["B2B", "repeat purchase potential"],
+          "summary": "Regional B2B suppliers and contractors"
+        },
+        "is_admin": true,
+        "qualification_questions": [
+          {
+            "lang": "en",
+            "question": "Is the company likely to sell through a repeatable B2B sales process?"
+          },
+          {
+            "lang": "en",
+            "question": "Is the company likely to have a dedicated commercial team?"
+          }
+        ],
+        "region": "us",
+        "targeting_prompt": "Prioritize regional business suppliers serving contractors."
+      },
+      "sequence": 2,
+      "session_attested": false,
+      "started_at": "1970-01-01T00:00:01.000Z",
+      "status": "success",
+      "tool_name": "leadbay_get_qualification_questions"
+    },
+    {
+      "duration_ms": 0,
+      "ended_at": "1970-01-01T00:00:02.000Z",
+      "input": {
+        "_triggered_by": "leadbay-deploy demo",
+        "add": [
+          "Is the company likely to sell B2B into fragmented small-business markets?",
+          "Is the company likely to operate field-sales teams across multiple territories?",
+          "Is the company likely to use a CRM or ERP that can export historical deal data?"
+        ]
+      },
+      "result": {
+        "changed": true
+      },
+      "sequence": 3,
+      "session_attested": true,
+      "started_at": "1970-01-01T00:00:02.000Z",
+      "status": "success",
+      "tool_name": "leadbay_set_qualification_questions"
+    },
+    {
+      "duration_ms": 0,
+      "ended_at": "1970-01-01T00:00:03.000Z",
+      "input": {
+        "_triggered_by": "leadbay-deploy demo",
+        "add_anti_patterns": ["Inactive, dissolved, or liquidated companies"]
+      },
+      "result": {
+        "changed": true
+      },
+      "sequence": 4,
+      "session_attested": true,
+      "started_at": "1970-01-01T00:00:03.000Z",
+      "status": "success",
+      "tool_name": "leadbay_set_qualification_questions"
+    }
+  ],
+  "schema_version": "1.0",
+  "stderr": "[leadbay mock] loaded 4 fixtures from <TMP>/generated\n"
+}

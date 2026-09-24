@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://leadbay.invalid/1.6/organizations/4242/user_prompt"
+  },
+  "response": {
+    "body": {
+      "prompt": "Prioritize regional business suppliers serving contractors."
+    },
+    "headers": {
+      "content-type": "application/json"
+    },
+    "status": 200
+  }
+}

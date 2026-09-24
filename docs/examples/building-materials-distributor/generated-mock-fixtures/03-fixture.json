@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://leadbay.invalid/1.6/organizations/4242/ideal_buyer_profile"
+  },
+  "response": {
+    "body": {
+      "anti_patterns": ["Consumer-only retailers"],
+      "key_characteristics": ["B2B", "repeat purchase potential"],
+      "summary": "Regional B2B suppliers and contractors"
+    },
+    "headers": {
+      "content-type": "application/json"
+    },
+    "status": 200
+  }
+}
